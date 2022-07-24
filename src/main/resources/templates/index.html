@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en" xmls:th="http://www.thymleaf.org" th:fragment="Layout(content)">
+  <head>
+
+    <link rel = "icon" href = "/image/logohead.jpeg" 
+        type = "image/x-icon">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v	5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	 <marquee direction="left" style="font-size:17px; background-color: rgb(4, 135, 135);"><a class="text-white" href="https://MedTech.com/">
+	 Our aim is to reduce a barrier of Hospitality, Like Updates, payment, Services, and many more.
+	 it's not easy but still we are working on it and make it as desirable. 
+	 Thank you if you are using. please login to use more functionality otherwise signup if you don't have id and password.
+	 </a></marquee>
+    <title th:text="${title}">Medtech</title>
+  </head>
+  <body>
+  	
+  	<!-- navbar -->
+  	<nav style="position: -webkit-sticky;" class="navbar navbar-expand-lg navbar-dark ncolor gradient-custom">
+  	<style>
+  		@font-face {
+   		font-family: Gotham;
+   		src: url(sansation_light.woff);
+		}
+
+		* {
+   		font-family: Gotham;
+		}
+	</style>
+  
+	
+  <div class="container-fluid">
+    <span class="material-icons">
+			local_hospital
+	</span>
+    <a class="navbar-brand" href="#"><strong id="blink">Medtech</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-1 text-uppercase">
+      
+      <span style="padding-top: 8px;" class="material-icons">
+		home
+	</span>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="dashboard">HOME</a>
+        </li>
+        
+        
+        <span style="padding-top: 8px;" class="material-icons">
+			info
+		</span>
+        <li class="nav-item " >
+          <a class="nav-link active" href="about-hospital">ABOUT</a>
+        </li>
+              
+              
+        <span style="padding-top: 8px;" class="material-icons">
+			grid_view
+		</span>      
+        <li class="nav-item">
+          <a class="nav-link active" href="departments">DEPARTMENTS</a>
+        </li>
+        
+        
+        <span style="padding-top: 8px;" class="material-icons">
+			medical_services
+		</span>
+        <li class="nav-item">
+          <a class="nav-link active" href="services">SERVICES</a>
+        </li>
+        
+        
+        <span style="padding-top: 8px;" class="material-icons">
+			list
+		</span>
+        <li class="nav-item">
+          <a class="nav-link active" href="doctorlist">DOCTORLIST</a>
+        </li>
+        
+        
+        <span style="padding-top: 8px;" class="material-icons">
+			contact_support
+		</span>
+        <li class="nav-item">
+          <a class="nav-link active" href="contactus">CONTACT US</a>
+        </li>
+   
+        <span style="padding-top: 8px;" class="material-icons">
+			login
+		</span>
+				
+        <li class="nav-item">
+          	<li class="dropdown " onclick="toggleDisplay('1')">
+                    <div style="padding: 9px;">
+                    	<a href="#" class="dropbtn btn-grad">LOGIN 
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                    </div>
+                    <div class="dropdown-content navbar-dark gradient-custom" id="1">
+                        <a href="login">ADMIN</a>
+                        <a href="doctor">DOCTOR</a>
+                        <a href="patient">PATIENT</a>
+                    </div>
+                    <style>
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+A {text-decoration: none;} 
+</style>
+                </li>
+        </li>  
+        
+                 
+        
+        <span style="padding-top: 8px;" class="material-icons">
+			account_circle
+		</span>
+        <li class="nav-item">
+          <a class="nav-link active" href="signup">SIGNUP</a>
+        </li>
+  
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<div th:replace="${content}"></div>  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	
+	<script th:src="@{/js/script.js}" ></script> 
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    
+    <!-- Footer -->
+<footer class=" text-center text-white" style="background-color: rgb(4, 135, 135);">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/deepak.lobaniya.56" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          
+          <!--Grid column-->
+
+          <!--Grid column-->
+                  <!--Grid column-->
+
+          <!--Grid column-->
+        
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        An institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment, 
+        both medical and surgical, of the sick and the injured; and for their housing during this process. 
+        The modern hospital also often serves as a centre for investigation and for teaching.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-1 col-md-6 mb-4 mb-md-0">
+
+          <ul class="list-unstyled mb-0">
+          	<h>Click Here</h>
+            <li>
+              <a href="about-hospital" class="textColorLink">About US</a>
+            </li>
+            <li>
+              <a href="departments" class="textColorLink">Departments</a>
+            </li>
+            <li>
+              <a href="services" class="textColorLink">Services</a>
+            </li>
+            <li>
+              <a href="doctorlist" class="textColorLink">Doctor List</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-10 col-md-6 mb-4 mb-md-0">
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="textColorA">Contact</a>
+            </li>
+            <li>
+              <a class="textColorA">Email: medtech789@gmail.com</a>
+            </li>
+            <li>
+              <a class="textColorA">Contact number: 8085019422</a>
+            </li>
+            <li>
+              <a class="textColorA">Address: Scheme no. 114, Near vijaynagar, Indore MP 452010 </a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgb(3, 82, 82);">
+    <a class="text-white" id="blink" href="#">© 2022 Copyright: MedTech.com - Designed By Deepak Lobaniya and his team.</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    
+  </body>
+</html>

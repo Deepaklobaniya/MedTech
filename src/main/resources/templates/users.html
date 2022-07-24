@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+		th:replace="index::Layout(~{::section})">
+<head>
+   <meta charset="UTF-8"/>
+   <title>All Users - CodeJava</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.4.1/css/bootstrap.min.css}" type="text/css"/>
+    <script th:src="@{/webjars/bootstrap/4.4.1/js/bootstrap.min.js}"></script>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+
+</head>
+<body>
+	<section>
+	
+		<div class="container ">
+    <div>
+        <form th:action="@{/logout}" method="post">
+            <h3 style="background-color: rgb(4, 135, 135); padding-top: 24px ; text-align:center; color: rgb(171, 237, 229)" >
+                Welcome to our application <b style="color: white">[[${#request.userPrincipal.principal.getFullName}]]</b>
+            </h3>
+            <p style="text-align: right"><input style="background-color: rgba(86,105,161,255); color: white;" type="submit" value="LOG OUT"/></p>
+        </form>
+    </div>
+     
+    <div>
+        <table class="table table-striped table-bordered styled-table ">
+            <thead class="thead-dark" style="color: rgb(8, 105, 95); line-height: 25%;">
+                <tr>
+                    <th>User ID</th>
+                    <th>E-mail</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user: ${listUsers}" style="line-height: 50%">
+                    <td th:text="${user.id}">User ID</td>
+                    <td th:text="${user.email}">E-mail</td>
+                    <td th:text="${user.firstname}">First Name</td>
+                    <td th:text="${user.lastname}">Last Name</td>
+                    <td th:text="${user.address}">Address</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+	</section>
+</body>
+</html>

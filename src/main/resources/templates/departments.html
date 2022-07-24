@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="index::Layout(~{::section})">
+<head>	
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+
+    <section>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+ 
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/cardiology.jpg" height="460px" width="740px">
+                </div>
+
+                <div class="item">
+                    <img src="/images/radiology.jpg" height="460px" width="740px">
+                </div>
+
+                <div class="item">
+                    <img src="/images/microbiology.jpg" height="460px" width="740px">
+                </div>
+ 
+                <div class="item">
+                    <img src="/images/orthopedology.jpg" height="460px" width="740px">
+                </div>
+                <div class="item">
+                    <img src="/images/heart transplant.jpg" height="460px" width="740px">
+                </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+      </div>
+    </section>
+<!-- start of Department section  -->
+
+<section class="department" id="department">
+
+    <div class="box-container">
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/cardiology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Cardiology</h3>
+                <p class="content">
+                    Cardiology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.
+
+A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.
+
+Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, the blood vessels, or both.
+
+
+                    </span>
+                </p>
+                <button id="button"> 
+                    <a href="Cardiology">Read More</a></button>
+            </div>
+        </div>
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/neuroscience.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Neurosciences</h3>
+                <p class="content">
+                    The brain is a marvel of evolution and essential to our humanity. At Scripps Research, we decode the staggering complexity of the brain to understand how it works , and we educate the next generation of scientists to carry on this crucial research. We study the nervous system at multiple levels from the genes and molecules inside individual neurons to the flow of information in the brain that allows us to think and move. We pinpoint how disease, injury and aging undermine our nervous system. 
+                    </span>
+                </p>
+                <button  id="button">
+                    <a href="Neurosciences.html">Read More</a></button>
+            </div>
+        </div>
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/orthopedology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Orthopedology</h3>
+                <p class="content">
+                    Orthopedics is a medical specialty that focuses on the diagnosis, correction, prevention, and treatment of patients with skeletal deformities - disorders of the bones, joints, muscles, ligaments, tendons, nerves and skin. These elements make up the musculoskeletal system.
+
+Your body's musculoskeletal system is a complex system of bones, joints, ligaments, tendons, muscles and nerves and allows you to move, work and be active. Once devoted to the care of children with spine and limb deformities.
+                    </span>
+                </p>
+                <button  id="button"> 
+                    <a href="Orthopedology.html">Read More</a></button>
+            </div>
+        </div>
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/microbiology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Microbiology</h3>
+                <p class="content">
+                    Microbiology is the study of the biology of microscopic organisms - viruses, bacteria, algae, fungi, slime molds, and protozoa. The methods used to study and manipulate these minute and mostly unicellular organisms differ from those used in most other biological investigations. Recombinant DNA technology uses microorganisms, particularly bacteria and viruses, to amplify DNA sequences and generate the encoded products. Moving genes from one microorganism to another, or amplifying them within microorganisms.
+                    </span>
+                </p>
+                <button  id="button"> 
+                    <a href="Orthopedology.html">Read More</a></button>            </div>
+        </div>
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/radiology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Radiology</h3>
+                <p class="content">
+                    Radiology is the principle management process of all the disease. It also contains a variety of tools and techniques for detection, analyzing, and curing. Moreover, it is the way through which the doctor finds out detailed information about disease-related structural changes. We all know early diagnosis can help save much life, and without it, there can be no proper diagnosis, thus no treatment.We all know early diagnosis can help save much life, and without it, there can be no proper diagnosis, thus no treatment.
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/general surgury.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>General Surgery</h3>
+                <p class="content">
+                    The Department of General Surgery provides surgical interventions that focus on the endocrine system, liver, colon, and other major parts of the human body. Some of the common procedures include appendix, gallbladder removals, thyroidectomies, hernia and bariatric surgeries.Some of the common procedures include appendix, gallbladder removals, colonoscopies, thyroidectomies, hernia and bariatric surgeries colonoscopies, thyroidectomies, hernia thyroidectomies, hernia and bariatric surgeries.
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/gastronology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Gastroenterlogy</h3>
+                <p class="content">
+                    Gastroenterology is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. It is a muscular tube that contracts to push the food through when you swallow.
+
+The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines. The stomach has special cells lining its wall to protect it from these acids.
+
+ .
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/electrophysiology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Electrophysiology</h3>
+                <p class="content">
+                    The EP study is performed in the electrophysiology laboratory of the hospital, where you'll be placed on an X-ray table. A camera and television screens , heart monitors and various instruments will be close by. Electrodes will be placed on your chest and back to connect you to monitoring equipment. A blood pressure cuff will be placed on your upper arm to monitor your blood pressure.
+
+To prevent infection, a nurse will shave and cleanse the groin and possibly neck area. 
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/urooncolgy.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Uro-Oncology</h3>
+                <p class="content">
+                    Urology is a surgical specialty,that is common for time, Besides surgery, a urologist is a doctor with wisdom of internal medicine, pediatrics, gynecology and other parts of health care. This is because a urologist encounters a wide range of clinical problems. The scope of urology is big and the American Urological Association has named seven sub-specialty parts.This is because a urologist encounters a wide range of clinical problems.It also deals with the male reproductive organs .
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/kidney transplant.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Kidney Transplant</h3>
+                <p class="content">
+                    Kidney transplant is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. It is a muscular tube that contracts to push the food through when you swallow.
+
+The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines. The stomach has special cells lining its wall to protect it from these acids.
+
+ .
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+                
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/diabotology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Diabetology</h3>
+                <p class="content">
+                   Diabetology is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. It is a muscular tube that contracts to push the food through when you swallow.
+
+The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines. The stomach has special cells lining its wall to protect it from these acids.
+
+ .
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/gynaecology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Gynaecology</h3>
+                <p class="content">
+                    Gynaecology is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. It is a muscular tube that contracts to push the food through when you swallow.
+
+The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines. The stomach has special cells lining its wall to protect it from these acids.
+
+ .
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/ent.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>E.N.T</h3>
+                <p class="content">
+                    The E.N.T study is performed in the electrophysiology laboratory of the hospital, where you'll be placed on an X-ray table. A camera and television screens , heart monitors and various instruments will be close by. Electrodes will be placed on your chest and back to connect you to monitoring equipment. A blood pressure cuff will be placed on your upper arm to monitor your blood pressure.
+
+To prevent infection, a nurse will shave and cleanse the groin and possibly neck area.
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/reproductive.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Reproductive Medicine</h3>
+                <p class="content">
+                    Reproductive medicine is performed in the electrophysiology laboratory of the hospital, where you'll be placed on an X-ray table. A camera and television screens , heart monitors and various instruments will be close by. Electrodes will be placed on your chest and back to connect you to monitoring equipment. A blood pressure cuff will be placed on your upper arm to monitor your blood pressure.
+
+To prevent infection,possibly neck area, a nurse will shave and cleanse the groin.
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/blood bank.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Blood Bank</h3>
+                <p class="content">
+                    Blood bank is used to store the blood for emergencies, where you'll be placed on an X-ray table.muscular tube that contracts A camera and television screens , heart monitors and various instruments will be close by. Electrodes will be placed on your chest and back to connect you to monitoring equipment. A blood pressure cuff will be placed on your upper arm to monitor your blood pressure.
+
+To prevent infection, a nurse will shave and cleanse the groin and possibly available when is needed in emergency time.
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/emergency.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Emergency Medicine</h3>
+                <p class="content">
+                    Emergency medicine is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. It is a muscular tube that contracts to push the food through when you swallow.
+
+The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines. The stomach has special cells lining its wall to protect it from these acids.
+
+ .
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/clinical nutrition.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Clinical Nutrition</h3>
+                <p class="content">
+                    Clinical nutrition is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.
+
+A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.
+
+Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, the blood vessels, or both.
+
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/neurology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Neurology</h3>
+                <p class="content">
+                    The brain is a marvel of evolution and essential to our humanity. At Scripps Research, we decode the staggering complexity of the brain to understand how it works , and we educate the next generation of scientists to carry on this crucial research. We study the nervous system at multiple levels from the genes and molecules inside individual neurons to the flow of information in the brain that allows us to think and move. We pinpoint how disease, injury and aging undermine our nervous system. 
+
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/dental science.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Dental Sciences</h3>
+                <p class="content">
+                    Dental science is a medical specialty that focuses on the diagnosis, correction, prevention, and treatment of patients with skeletal deformities - disorders of the bones, joints, muscles, ligaments, tendons, nerves and skin. These elements make up the musculoskeletal system.
+
+Your body's musculoskeletal system is a complex system of bones, joints, ligaments, tendons, muscles and nerves and allows you to move, work and be active. Once devoted to the care of children with spine and limb deformities.
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/endrocronology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Endocrinology</h3>
+                <p class="content">
+                    Endocrinology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.
+
+                    A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.
+                    
+                    Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, the blood vessels, or both.
+                    
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/spine surgury.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Spine Surgery</h3>
+                <p class="content">
+                    Spine surgery is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.
+
+                    A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.
+                    
+                    Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, the blood vessels.
+                    
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/general surgury.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>General Surgery</h3>
+                <p class="content">
+                    General surgery is a medical specialty that focuses on the diagnosis, correction, prevention, and treatment of patients with skeletal deformities - disorders of the bones, joints, muscles, ligaments, tendons, nerves and skin. These elements make up the musculoskeletal system.
+
+Your body's musculoskeletal system is a complex system of bones, joints, ligaments, tendons, muscles and nerves and allows you to move, work and be active. Once devoted to the care of children with spine and limb deformities.
+                    
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/heamoto.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Haemato Oncology</h3>
+                <p class="content">
+                    Haemato oncology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.
+
+                    A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.
+                    
+                    Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, the blood vessels.
+                    
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/nicu.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>NICU & PICU</h3>
+                <p class="content">
+                    NICU is a medical specialty that focuses on the diagnosis, correction, prevention, and treatment of patients with skeletal deformities - disorders of the bones, joints, muscles, ligaments, tendons, nerves and skin. These elements make up the musculoskeletal system.
+
+Your body's musculoskeletal system is a complex system of bones, joints, ligaments, tendons, muscles and nerves and allows you to move, work and be active. Once devoted to the care of children with spine and limb deformities.
+                    
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/bone marrow.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Bone Marrow Transplant</h3>
+                <p class="content">
+                    Bone marrow transplant is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.
+
+                    A cardiologist specializes in diagnosing and treating diseases. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.
+                    
+                    Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, cardiovascular system.
+                    
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/heart transplant.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Heart Transplant</h3>
+                <p class="content">
+                    Heart transplant is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.
+
+                    A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.
+                    
+                    Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, the blood vessels.
+                    
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/breast cancer.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Breast Cancer</h3>
+                <p class="content">
+                    Breast cancer is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. 
+
+ The stomach has special cells lining its wall to protect it from these acids.
+
+ .It is a muscular tube that contracts to push the food through when you swallow.The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines.
+
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/pulmonology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Pulmonology</h3>
+                <p class="content">
+                    Pulmonology is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. 
+
+ The stomach has special cells lining its wall to protect it from these acids.
+
+ .It is a muscular tube that contracts to push the food through when you swallow.The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines.
+
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+        
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/piadiatrics.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Developmental Paediatrics</h3>
+                <p class="content">
+                    Paediatrics is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.
+
+                    A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.
+                    
+                    Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, the blood vessels, or both.
+                    
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/rheumetology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Rheumatology</h3>
+                <p class="content">
+                    Rheumatology is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. 
+
+ The stomach has special cells lining its wall to protect it from these acids.
+
+ .It is a muscular tube that contracts to push the food through when you swallow.The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines.
+
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/vascual surgury.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Vascular Surgery</h3>
+                <p class="content">
+                    Vascular surgery is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. 
+
+ The stomach has special cells lining its wall to protect it from these acids.
+
+ .It is a muscular tube that contracts to push the food through when you swallow.The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines.
+
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/neuclear medicine.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Nuclear Medicine</h3>
+                <p class="content">
+                    Nuclear medicine is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+                    The oesophagus is the tube that joins your mouth with your stomach. 
+                    
+                     The stomach has special cells lining its wall to protect it from these acids.
+                    
+                     .It is a muscular tube that contracts to push the food through when you swallow.The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines.
+                    
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/pathology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Pathology</h3>
+                <p class="content">
+                    Pathology is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. 
+
+ The stomach has special cells lining its wall to protect it from these acids.
+
+ .It is a muscular tube that contracts to push the food through when you swallow.The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines.
+
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/plastic surgury.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Plastic Surgery</h3>
+                <p class="content">
+                    Plastic surgery is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. 
+
+ The stomach has special cells lining its wall to protect it from these acids.
+
+ .It is a muscular tube that contracts to push the food through when you swallow.The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines.
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/gaeratrics.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Geriatrics</h3>
+                <p class="content">
+                    Geriatrics is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. 
+
+The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines. The stomach has special cells lining its wall to protect it from these acids.
+
+ .It is a muscular tube that contracts to push the food through when you swallow.
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+        
+		<div class="box">
+            
+            <div class="image">
+                <img src="images/psychology.jpg" alt="">
+            </div>
+            <div class="post">
+                <h3>Psychology</h3>
+                <p class="content">
+                    Psychology is the branch of medicine that looks at diseases of the oesophagus (gullet), stomach, small and large intestines (bowel), liver, gallbladder and pancreas.
+
+The oesophagus is the tube that joins your mouth with your stomach. It is a muscular tube that contracts to push the food through when you swallow.
+
+The stomach is where food is broken down by acid,that is releases by liver and emptied into your intestines. The stomach has special cells lining its wall to protect it from these acids.
+
+ .
+                    </span>
+                </p>
+                <button onclick="readMore(this)" id="button"> Read More</button>
+            </div>
+        </div>
+        
+		
+
+        
+        
+        </div>
+    </div>
+
+</section>
+
+
+</body>
+</html>
